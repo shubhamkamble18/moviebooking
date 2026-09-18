@@ -1,0 +1,403 @@
+.showtime-page {
+  min-height: calc(100vh - 70px);
+  padding: 55px 7% 80px;
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+/* Header */
+
+.showtime-header {
+  margin-bottom: 35px;
+}
+
+.showtime-header p {
+  color: #e50914;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.showtime-header h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.showtime-header span {
+  color: #888888;
+  font-size: 14px;
+}
+
+/* Selected Movie */
+
+.selected-movie {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background: #171717;
+  border: 1px solid #252525;
+  border-radius: 10px;
+}
+
+.selected-movie img {
+  width: 90px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.selected-movie-info h2 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.selected-movie-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.selected-movie-meta span {
+  color: #999999;
+  font-size: 12px;
+}
+
+.selected-movie-meta span:first-child {
+  color: #ffffff;
+}
+
+.selected-movie-info > p {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #222222;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  color: #cccccc;
+  font-size: 11px;
+}
+
+/* Date */
+
+.date-section {
+  margin-bottom: 40px;
+}
+
+.date-section h2,
+.cinema-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.date-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.date-btn {
+  width: 75px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  border: 1px solid #303030;
+  border-radius: 7px;
+
+  background: #151515;
+  color: #ffffff;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.date-btn strong {
+  font-size: 18px;
+}
+
+.date-btn span {
+  color: #888888;
+  font-size: 11px;
+}
+
+.date-btn:hover {
+  border-color: #e50914;
+}
+
+.date-btn.active {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+.date-btn.active span {
+  color: #ffffff;
+}
+
+/* Cinema */
+
+.cinema-section {
+  margin-bottom: 35px;
+}
+
+.cinema-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cinema-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  padding: 20px;
+
+  background: #171717;
+  border: 1px solid #252525;
+  border-radius: 9px;
+
+  transition: 0.3s ease;
+}
+
+.cinema-card:hover {
+  border-color: #333333;
+}
+
+.cinema-info {
+  min-width: 190px;
+}
+
+.cinema-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cinema-info p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #888888;
+  font-size: 12px;
+}
+
+.cinema-info svg {
+  color: #e50914;
+  font-size: 11px;
+}
+
+/* Showtimes */
+
+.showtimes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.showtime-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 9px 14px;
+
+  background: #151515;
+  border: 1px solid #333333;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-size: 12px;
+
+  transition: 0.3s ease;
+}
+
+.showtime-btn svg {
+  color: #e50914;
+  font-size: 11px;
+}
+
+.showtime-btn:hover {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+.showtime-btn:hover svg {
+  color: #ffffff;
+}
+
+/* Footer */
+
+.showtime-footer {
+  margin-top: 35px;
+}
+
+.back-movie-btn {
+  display: inline-block;
+
+  padding: 11px 20px;
+
+  border: 1px solid #333333;
+  border-radius: 5px;
+
+  color: #cccccc;
+  font-size: 13px;
+
+  transition: 0.3s ease;
+}
+
+.back-movie-btn:hover {
+  border-color: #e50914;
+  color: #ffffff;
+}
+
+/* Not Found */
+
+.showtime-not-found {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+.showtime-not-found h2 {
+  font-size: 28px;
+}
+
+.showtime-back-btn {
+  padding: 10px 20px;
+
+  background: #e50914;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .showtime-page {
+    padding: 50px 5% 70px;
+  }
+
+  .cinema-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .showtimes {
+    justify-content: flex-start;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .showtime-page {
+    padding: 40px 6% 55px;
+  }
+
+  .showtime-header h1 {
+    font-size: 28px;
+  }
+
+  .showtime-header span {
+    font-size: 12px;
+  }
+
+  .selected-movie {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .selected-movie img {
+    width: 70px;
+    height: 100px;
+  }
+
+  .selected-movie-info h2 {
+    font-size: 17px;
+  }
+
+  .selected-movie-meta {
+    gap: 8px;
+  }
+
+  .selected-movie-meta span {
+    font-size: 10px;
+  }
+
+  .date-btn {
+    width: 62px;
+    height: 62px;
+  }
+
+  .date-btn strong {
+    font-size: 16px;
+  }
+
+  .cinema-card {
+    padding: 15px;
+  }
+
+  .cinema-info h3 {
+    font-size: 14px;
+  }
+
+  .showtime-btn {
+    padding: 8px 11px;
+    font-size: 11px;
+  }
+
+}
+
+/* Small Mobile */
+
+@media (max-width: 400px) {
+
+  .selected-movie {
+    align-items: flex-start;
+  }
+
+  .selected-movie img {
+    width: 60px;
+    height: 85px;
+  }
+
+  .selected-movie-info h2 {
+    font-size: 15px;
+  }
+
+  .date-list {
+    gap: 7px;
+  }
+
+  .date-btn {
+    width: 55px;
+    height: 58px;
+  }
+
+}
