@@ -11,7 +11,7 @@ function Home() {
   return (
     <main className="home">
 
-      {/* ================= HERO ================= */}
+      
 
       <section className="hero">
 
@@ -43,7 +43,7 @@ function Home() {
       </section>
 
 
-      {/* ================= NOW SHOWING ================= */}
+     
 
       <section className="movie-section">
 
@@ -126,7 +126,6 @@ function Home() {
       </section>
 
 
-      {/* ================= OFFERS ================= */}
 
       <section className="offers-section">
 
@@ -226,7 +225,7 @@ function Home() {
       </section>
 
 
-      {/* ================= COMING SOON ================= */}
+     
 
       <section className="coming-section">
 
@@ -319,7 +318,7 @@ function Home() {
       </section>
 
 
-      {/* ================= WHY CINEBOOK ================= */}
+      
 
       <section className="why-section">
 
@@ -391,7 +390,7 @@ function Home() {
       </section>
 
 
-      {/* ================= CTA ================= */}
+    
 
       <section className="cta-section">
 

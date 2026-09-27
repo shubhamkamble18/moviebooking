@@ -26,10 +26,7 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/Login" element={<Login/>}/>
         <Route path="/discount" element={<Discount/>}/>
-        <Route
-          path="/booking-confirmation"
-          element={<BookingConfirmation />}
-        />
+        <Route path="/booking-confirmation" element={<BookingConfirmation />}/>
         <Route path="/bookings" element={<MyBookings />} />
       </Routes>
       <Footer/>

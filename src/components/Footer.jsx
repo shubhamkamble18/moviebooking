@@ -59,7 +59,7 @@ function Footer() {
 
           <Link to="/movies">Movies</Link>
 
-          <Link to="/discounts">Discounts</Link>
+          <Link to="/discount">Discounts</Link>
 
           <Link to="/bookings">My Bookings</Link>
 
@@ -107,9 +107,6 @@ function Footer() {
           © 2026 CineBook. All rights reserved.
         </p>
 
-        <p>
-          Made for movie lovers 🎬
-        </p>
 
       </div>
 
