@@ -15,7 +15,7 @@ import kantara from "../images/kantara.jpeg";
 import kgf2 from "../images/kgf2.jpeg";
 import parasite from "../images/parasite.jpeg";
 import busan from "../images/busan.jpeg";
-import intouchables from "../images/intouchables.jpeg";
+import intouchables from "../images/Intouchables.jpeg";
 import crouchingtiger from "../images/crouchingtiger.jpeg";
 import godfather from "../images/godfather.jpeg";
 
