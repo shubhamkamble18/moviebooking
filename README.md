@@ -6,7 +6,7 @@ The project focuses on creating a clean, user-friendly movie booking experience 
 
 ## 🚀 Live Demo
 
-🔗 **Live Website:** https://shubhamkamble-portfolio.netlify.app/
+🔗 **Live Website:** https://ticketdada.netlify.app/
 
 ## 📌 Features
 
