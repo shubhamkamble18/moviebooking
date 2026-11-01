@@ -1,27 +1,69 @@
-import { FaSearch } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+import { FaBars, FaSearch, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
 function Navbar() {
-  return (
-    <nav className="navbar">
-      <h2 className="logo">
-        Ticket<span>Dada</span>
-      </h2>
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
 
-      <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/movies">Movies</Link>
-        <Link to="/discount">Discount</Link>
-        <Link to="/bookings">My Bookings</Link>
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+
+    function handleKeyDown(event) {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [menuOpen]);
+
+  return (
+    <nav className="navbar" aria-label="Primary navigation">
+      <Link
+        className="logo"
+        to="/"
+        aria-label="TicketDada home"
+        onClick={() => setMenuOpen(false)}
+      >
+        Ticket<span>Dada</span>
+      </Link>
+
+      <div
+        className={`nav-links${menuOpen ? " is-open" : ""}`}
+        id="primary-navigation"
+      >
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/movies" onClick={() => setMenuOpen(false)}>Movies</Link>
+        <Link to="/discount" onClick={() => setMenuOpen(false)}>Discount</Link>
+        <Link to="/bookings" onClick={() => setMenuOpen(false)}>My Bookings</Link>
+        <Link
+          to="/login"
+          className="mobile-login-link"
+          onClick={() => setMenuOpen(false)}
+        >
+          Login
+        </Link>
       </div>
 
       <div className="nav-right">
-        <FaSearch />
-
-     <Link to="/login" className="login-nav-btn">
-      Login
-    </Link>
+        <FaSearch className="nav-search-icon" aria-hidden="true" />
+        <Link to="/login" className="login-nav-btn">
+          Login
+        </Link>
+        <button
+          ref={menuButtonRef}
+          type="button"
+          className="nav-menu-toggle"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setMenuOpen((isOpen) => !isOpen)}
+        >
+          {menuOpen ? <FaTimes aria-hidden="true" /> : <FaBars aria-hidden="true" />}
+        </button>
       </div>
     </nav>
   );
