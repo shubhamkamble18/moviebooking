@@ -52,11 +52,20 @@ img {
 /* Logo */
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   flex-shrink: 0;
   text-decoration: none;
   font-size: 25px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.nav-logo-image {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .logo span {

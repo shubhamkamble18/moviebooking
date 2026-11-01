@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaBars, FaSearch, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import popcornLogo from "../images/popcorn-logo-transparent.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,6 +29,7 @@ function Navbar() {
         aria-label="TicketDada home"
         onClick={() => setMenuOpen(false)}
       >
+        <img className="nav-logo-image" src={popcornLogo} alt="" />
         Ticket<span>Dada</span>
       </Link>
 
